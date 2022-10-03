@@ -1,5 +1,4 @@
 from django.contrib import admin
-
 from market_app.models import Product
 
 

@@ -8,7 +8,7 @@ Add product
 
   <div class="container">
 
-    <form action="/products/add/" method="POST">
+    <form action="{% url 'product_add' %}" method="POST">
       {% include 'partial/product_form.html' with button_text='Add a product' %}
     </form>
 

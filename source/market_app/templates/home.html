@@ -1,10 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% block title %}
+My-Market
+{% endblock %}
+
+{% block task %}
+
+{% for product in products %}
+
+    <div class="album py-3 bg-light">
+      <div class="container">
+
+        <div class="col">
+          <div class="card flex-md-row mb-4 box-shadow h-md-300">
+            <img class="card-img-right flex-auto d-none d-md-block" data-src="{{ product.image }}" alt="Thumbnail [200x250]" style="width: 350px; height: 300px;" src="{{ product.image }}" data-holder-rendered="true">
+            <div class="card-body d-flex flex-column align-items-start">
+              <h4 class="mb-2">{{ product.name }}</h4>
+              {% for choice in choices %}
+                {% if product.categories == choice.0 %}
+                  <div class="mb-2 text-muted">Category: {{ choice.1 }}</div>
+                {% endif %}
+              {% endfor %}
+              <h5 class="mb-4">Price: {{ product.price }} 〒.</h5>
+              <p class="card-text mb-auto"></p>
+              <div class="mb-4" >
+                <a href="{% url 'product_detail' product.pk %}" class="btn btn-sm btn-outline-secondary">View</a>
+                <a href="{% url 'product_update' product.pk %}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-pencil-fill"></i></a>
+                <a href="{% url 'product_delete' product.pk %}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-trash-fill"></i></a>
+              </div>
+              <small class="text-muted">Added in: {{ product.created_at }}</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+{% endfor %}
+
+{% endblock %}

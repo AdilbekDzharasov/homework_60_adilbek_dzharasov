@@ -1,0 +1,146 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$EIcgMQ1845PA4Ku82UBLrX$8XGVJue14MVsmyAucEJT1Exlfn09pY+v1abrwLE8xoU=",
+    "last_login": "2022-10-03T11:41:29.675Z",
+    "is_superuser": true,
+    "username": "root",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-09-30T11:13:28.639Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "market_app.product",
+  "pk": 1,
+  "fields": {
+    "name": "Men's shirt",
+    "description": "Men's checkered shirt",
+    "image": "http://lamcdn.net/furfurmag.ru/post_image-image/aSFN9rXYF1tzzWU8s3dqWQ-article.jpg",
+    "categories": "CLOTHES",
+    "remainder": 15,
+    "price": "10999.00",
+    "created_at": "2022-09-30T11:24:32.213Z",
+    "changed_at": "2022-10-03T15:24:38.794Z"
+  }
+},
+{
+  "model": "market_app.product",
+  "pk": 3,
+  "fields": {
+    "name": "Skis Sport15",
+    "description": "Skis for children Sport15",
+    "image": "https://klike.net/uploads/posts/2020-03/1584784906_6.jpg",
+    "categories": "SPORT",
+    "remainder": 12,
+    "price": "20000.00",
+    "created_at": "2022-09-30T13:18:37.696Z",
+    "changed_at": "2022-10-03T15:16:15.007Z"
+  }
+},
+{
+  "model": "market_app.product",
+  "pk": 7,
+  "fields": {
+    "name": "Боксерские перчатки",
+    "description": "Боксерские перчатки Everlast",
+    "image": "https://images.satu.kz/89600628_89600628.jpg?PIMAGE_ID=89600628",
+    "categories": "SPORT",
+    "remainder": 0,
+    "price": "12990.00",
+    "created_at": "2022-09-30T14:52:34.570Z",
+    "changed_at": "2022-09-30T14:52:34.570Z"
+  }
+},
+{
+  "model": "market_app.product",
+  "pk": 10,
+  "fields": {
+    "name": "Laptop Lenovo Ideapad 3",
+    "description": "Laptop Lenovo Ideapad 3 Celeron 525U",
+    "image": "https://www.technodom.kz/_next/image?url=https%3A%2F%2Fapi.technodom.kz%2Ff3%2Fapi%2Fv1%2Fimages%2F800%2F800%2F233518_3.jpg&w=3840&q=85",
+    "categories": "COMPUTERS",
+    "remainder": 15,
+    "price": "314000.00",
+    "created_at": "2022-09-30T15:55:31.266Z",
+    "changed_at": "2022-10-03T15:13:02.580Z"
+  }
+},
+{
+  "model": "market_app.product",
+  "pk": 11,
+  "fields": {
+    "name": "Kitchen table",
+    "description": "Kitchen table Barneo T-10, black",
+    "image": "https://tgrad.kz/upload/resize_cache/iblock/a76/1000_1000_1/a76bd3330d237492c46ae140f810976a.webp",
+    "categories": "FURNITURE",
+    "remainder": 4,
+    "price": "77500.00",
+    "created_at": "2022-09-30T15:57:22.309Z",
+    "changed_at": "2022-10-03T15:15:39.373Z"
+  }
+},
+{
+  "model": "market_app.product",
+  "pk": 12,
+  "fields": {
+    "name": "Backpack SWISSGEAR",
+    "description": "Backpack SWISSGEAR DD1",
+    "image": "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h74/h78/52451705815070/swissgear-rukzak-8810-cernyj-105202707-1.jpg",
+    "categories": "ACCESSORIES",
+    "remainder": 6,
+    "price": "9990.00",
+    "created_at": "2022-09-30T17:11:55.333Z",
+    "changed_at": "2022-10-03T15:02:49.686Z"
+  }
+},
+{
+  "model": "market_app.product",
+  "pk": 13,
+  "fields": {
+    "name": "Rope",
+    "description": "Rope jute.",
+    "image": "https://tdstroitel.ru/images/detailed/17/110396,_110397,_110398,_110399,_110400,_110401,_110402,_110843,_502409,_502410,_502411_htuo-le.jpg",
+    "categories": "OTHER",
+    "remainder": 4,
+    "price": "5500.00",
+    "created_at": "2022-09-30T17:14:42.346Z",
+    "changed_at": "2022-10-03T15:25:22.198Z"
+  }
+},
+{
+  "model": "market_app.product",
+  "pk": 14,
+  "fields": {
+    "name": "Loro piano кепка",
+    "description": "Кепка Loro piano",
+    "image": "https://files.glamourboutique.uz/originals/1526543289_18dgu33.jpg",
+    "categories": "ACCESSORIES",
+    "remainder": 0,
+    "price": "19990.00",
+    "created_at": "2022-10-03T11:42:28.283Z",
+    "changed_at": "2022-10-03T11:42:28.283Z"
+  }
+},
+{
+  "model": "market_app.product",
+  "pk": 18,
+  "fields": {
+    "name": "Watch Casio AE1000W",
+    "description": "Casio AE1000W 1AVEF",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr2UCytW36YGDBcpLEN53dQwDFgFAqYzHuLg&usqp=CAU",
+    "categories": "ACCESSORIES",
+    "remainder": 18,
+    "price": "145000.00",
+    "created_at": "2022-10-03T15:28:00.917Z",
+    "changed_at": "2022-10-03T15:39:04.621Z"
+  }
+}
+]

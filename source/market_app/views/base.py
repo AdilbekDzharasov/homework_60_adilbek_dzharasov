@@ -6,7 +6,7 @@ from market_app.forms import SearchForm
 
 
 class HomeView(ListView):
-    template_name = 'home.html'
+    template_name = 'products/home.html'
     context_object_name = 'products'
     model = Product
     ordering = ['categories', 'name']

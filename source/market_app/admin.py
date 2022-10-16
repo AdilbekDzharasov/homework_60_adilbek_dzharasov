@@ -1,5 +1,5 @@
 from django.contrib import admin
-from market_app.models import Product
+from market_app.models.product import Product
 
 
 class ProductAdmin(admin.ModelAdmin):

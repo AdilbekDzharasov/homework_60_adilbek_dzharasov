@@ -5,7 +5,7 @@ My-Market
 {% endblock %}
 
 {% block task %}
-
+{% include 'partial/simple_search.html' %}
 {% for product in products %}
 
     <div class="album py-3 bg-light">
@@ -35,7 +35,24 @@ My-Market
 
       </div>
     </div>
+{% empty %}
+<div class="album py-3 bg-light">
+        <div class="container">
 
+          <div class="row">
+            <div class="col">
+              <div class="card mb-4 box-shadow">
+                <div class="card-body">
+                  <h3 class="card-text">Products not found</h3>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+</div>
 {% endfor %}
-
+{% if is_paginated %}
+  {% include 'partial/pagination.html' %}
+{% endif %}
 {% endblock %}

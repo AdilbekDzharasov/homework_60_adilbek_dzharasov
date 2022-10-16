@@ -1,6 +1,6 @@
 from django import forms
 from django.forms import widgets
-from market_app.models import CategoriesChoices
+from market_app.models.product import CategoriesChoices
 
 
 class ProductForm(forms.Form):
@@ -10,4 +10,8 @@ class ProductForm(forms.Form):
     categories = forms.ChoiceField(required=True, choices=CategoriesChoices.choices, label='Categories')
     remainder = forms.IntegerField(min_value=0, required=True, label='Remainder')
     price = forms.DecimalField(max_digits=10, decimal_places=2, required=True, label='Price')
+
+
+class SearchForm(forms.Form):
+    search = forms.CharField(max_length=100, required=False, label="Search")
 

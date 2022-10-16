@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from market_app.models import Product
+from market_app.models.product import Product
 
 
 def delete_view(request, pk):

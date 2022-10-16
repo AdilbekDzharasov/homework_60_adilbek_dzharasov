@@ -1,6 +1,6 @@
 from django.db import models
 from django.db.models import TextChoices
-from django.core.validators import MaxValueValidator, MinValueValidator
+from market_app.managers import ProductManager
 
 
 class CategoriesChoices(TextChoices):
@@ -21,6 +21,8 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2, null=False, blank=False, verbose_name='Стоимость')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания')
     changed_at = models.DateTimeField(auto_now=True, verbose_name='Дата изменения')
+
+    objects = ProductManager()
 
     def __str__(self):
         return f"{self.name} - {self.categories}"

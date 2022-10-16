@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from market_app.models import Product, CategoriesChoices
+from market_app.models.product import Product, CategoriesChoices
 from market_app.forms import ProductForm
 
 

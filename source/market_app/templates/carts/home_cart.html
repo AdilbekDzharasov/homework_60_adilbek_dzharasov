@@ -11,7 +11,8 @@
         <th>Price</th>
         <th>Quantity</th>
         <th>Sum</th>
-        <th></th>
+        <th>Delete completely</th>
+        <th>Delete one product</th>
       </tr>
       </thead>
       <tbody>
@@ -21,8 +22,25 @@
           <td class="text-right">{{ cart.product.price }}</td>
           <td class="text-right">{{ cart.quantity }}</td>
           <td class="text-right">{{ cart.get_sum }}</td>
-          <td class="text-right"><a href="#" class="btn btn-sm btn-outline-secondary"><i class="bi bi-trash-fill"></i></a></td>
+          <td class="text-right"><a href="{% url 'cart_delete' cart.pk %}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-trash-fill"></i></a></td>
+          <td class="text-right"><a href="{% url 'product_cart_delete' cart.pk %}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-trash-fill"></i></a></td>
         </tr>
+      {% empty %}
+        <div class="album py-3 bg-light">
+                <div class="container">
+
+                  <div class="row">
+                    <div class="col">
+                      <div class="card mb-4 box-shadow">
+                        <div class="card-body">
+                          <h3 class="card-text">Carts not found</h3>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+        </div>
       {% endfor %}
       </tbody>
     </table>

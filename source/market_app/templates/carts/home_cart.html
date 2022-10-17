@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block task %}
+
+<div class="container">
+  <div class="table">
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Sum</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for cart in carts %}
+        <tr>
+          <td class="text">{{ cart.product.name }}</td>
+          <td class="text-right">{{ cart.product.price }}</td>
+          <td class="text-right">{{ cart.quantity }}</td>
+          <td class="text-right">{{ cart.get_sum }}</td>
+          <td class="text-right"><a href="#" class="btn btn-sm btn-outline-secondary"><i class="bi bi-trash-fill"></i></a></td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <h4>Total sum: {{ total }}</h4>
+</div>
+
+{% endblock %}

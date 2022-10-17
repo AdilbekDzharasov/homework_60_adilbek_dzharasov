@@ -1,4 +1,3 @@
-from django.shortcuts import get_object_or_404
 from django.views.generic import ListView
 from market_app.models.cart import ProductInCart
 

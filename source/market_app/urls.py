@@ -8,7 +8,6 @@ from market_app.cart_views.base_cart import CartHomeView
 from market_app.cart_views.carts_delete import cart_delete, ProductInCartDeleteView
 from market_app.cart_views.carts_add import cart_add_product
 
-
 urlpatterns = [
     path('', HomeView.as_view(), name='home'),
     path('products/<int:pk>', ProductDetailView.as_view(), name='product_detail'),

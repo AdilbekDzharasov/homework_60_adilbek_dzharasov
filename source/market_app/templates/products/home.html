@@ -27,7 +27,7 @@ My-Market
                 <a href="{% url 'product_detail' product.pk %}" class="btn btn-sm btn-outline-secondary">View</a>
                 <a href="{% url 'product_update' product.pk %}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-pencil-fill"></i></a>
                 <a href="{% url 'product_delete' product.pk %}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-trash-fill mb-3"></i></a>
-                <a href="#" class="btn btn-sm btn-outline-secondary"><i class="bi bi-cart-plus-fill"></i></a>
+                <a href="{% url 'product_cart_add' product.pk %}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-cart-plus-fill"></i></a>
               </div>
               <small class="text-muted">Added in: {{ product.created_at }}</small>
             </div>

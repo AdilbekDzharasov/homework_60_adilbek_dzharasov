@@ -26,6 +26,7 @@ My-Market-Product
             <a href="{% url 'home' %}" class="btn btn-sm btn-outline-secondary">← Go back to the "My-market"</a>
             <a href="{% url 'product_update' product.pk %}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-pencil-fill"></i></a>
             <a href="{% url 'product_delete' product.pk %}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-trash-fill"></i></a>
+            <a href="{% url 'product_cart_add' product.pk %}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-cart-plus-fill"></i></a>
           </div>
         </div>
       </div>
